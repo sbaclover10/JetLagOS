@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Arduino GPS Log</name>
+    <description>GPS track logged to SD card</description>
+    
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <Placemark>
+      <name>Logged Route</name>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          -122.084058,37.422003,15.0
+          -122.084110,37.422115,15.2
+          -122.084165,37.422230,15.5
+          -122.084220,37.422345,15.8
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
